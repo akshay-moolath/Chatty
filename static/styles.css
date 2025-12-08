@@ -109,17 +109,16 @@
       white-space:pre-wrap;
       word-wrap:break-word;
     }
-    .bubble.other{
-      background:var(--other-bg);
-      color:var(--other-text);
-      border-top-left-radius:8px; 
-    }
-    .bubble.me{
-      background:var(--me-bg);
-      color:var(--me-text);
-      border-top-right-radius:8px; 
-      text-align:left; 
-    }
+    .bubble.other {
+    background: #f1f1f1;
+    color: #000000;
+    border-radius: 14px 14px 14px 4px;
+}
+    .bubble.me {
+    background: hsl(0, 0%, 100%);
+    color: #000000;
+    border-radius: 14px 14px 4px 14px;
+}
 
     .system{display:flex;justify-content:center;color:var(--text-muted);font-style:italic;margin:10px 0;font-size:13px}
 

@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8" />
 <title>Chatty</title>
-<title>Shortie - URL Shortener</title>
 <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
@@ -18,11 +17,9 @@
 
     <div class="content">
       <div class="left">
-        <div style="margin-bottom:8px;color:var(--muted)">
-          Username:
-          <input id="username" type="text" placeholder="your name"/>
-          <button id="connectBtn">Connect</button>
-        </div>
+
+        <!-- REMOVED USERNAME INPUT + CONNECT BUTTON -->
+        <div style="display:none;"></div>
 
         <div id="chat" class="chat-window" aria-live="polite"></div>
 
@@ -33,6 +30,7 @@
       </div>
     </div>
   </div>
-<script src = "/static/scripts.js"></script>
+
+<script src="/static/scripts.js"></script>
 </body>
 </html>
