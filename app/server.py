@@ -1,9 +1,18 @@
-from fastapi import FastAPI, WebSocket, WebSocketDisconnect
+from fastapi import FastAPI, WebSocket
+from fastapi.responses import FileResponse
 import json
 import asyncio
+from fastapi.staticfiles import StaticFiles
+
 
 
 app = FastAPI()
+
+@app.get("/")# connecting static pages to url/endpoint
+def home():
+    return FileResponse("static/index.html")
+
+app.mount("/static", StaticFiles(directory="static"), name="static")
 
 clients = set()
 

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Chatty</title>
+<title>Shortie - URL Shortener</title>
+<link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="wrap" role="main" aria-label="Chat">
+    <header>
+      <h1>Chatty</h1>
+      <div style="margin-left:auto;color:var(--muted);font-size:13px">FastAPI WebSocket</div>
+    </header>
+
+    <div class="content">
+      <div class="left">
+        <div style="margin-bottom:8px;color:var(--muted)">
+          Username:
+          <input id="username" type="text" placeholder="your name"/>
+          <button id="connectBtn">Connect</button>
+        </div>
+
+        <div id="chat" class="chat-window" aria-live="polite"></div>
+
+        <div class="controls" style="margin-top:12px">
+          <input id="msg" type="text" placeholder="Type a message and press Enter" disabled />
+          <button id="sendBtn" disabled>Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src = "/static/scripts.js"></script>
+</body>
+</html>
