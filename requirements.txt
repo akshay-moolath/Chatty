@@ -9,3 +9,4 @@ websockets
 python-dotenv
 pydantic
 psycopg2-binary
+argon2-cffi
